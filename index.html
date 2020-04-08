@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FrontendFunn - Simple Responsive Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark fixed-top bgGradient sidebarNavigation"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse align-self-lg-start"
+        id="navbarSupportedContent"
+      >
+        <ul
+          class="navbar-nav flex-lg-column mt-lg-5 w-100 justify-content-around text-center"
+        >
+          <li class="nav-item active">
+            <a class="nav-link h4" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mainWrapper mt-lg-0 mt-5 pt-lg-0 pt-2">
+      <section class="section bg-light" id="about" data-section-name="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-lg-2 order-md-2">
+              <div
+                class="imgContainer mx-auto p-2 rounded-circle border shadow"
+              >
+                <img
+                  src="./images/person.png"
+                  class="img-fluid rounded-circle bg-white p-2"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 order-lg-1 order-md-1">
+              <div class="jumbotron bg-transparent">
+                <h1>
+                  Hi There...! <br />
+                  I'm John Doe
+                </h1>
+                <div class="h6 text-muted text-justify my-4">
+                  I'm a freelance UI Developer, based in Toronto, Canada. I have
+                  worked with startups and established companies. <br />
+                </div>
+                <h4>I'm Passionate about my Work</h4>
+                <button
+                  class="bgGradient btn btn-lg text-white px-5 py-2 mt-4 border-0 rounded-pill"
+                >
+                  Hire Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" data-section-name="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-left mb-2 text-muted text-center">
+                Skills and Tools
+              </h1>
+            </div>
+            <div class="col-md-12">
+              <div class="skill my-5">
+                <div class="title">HTML</div>
+                <div class="progressBar" data-percentage="90">
+                  <span class="progress">
+                    <div class="percentage"></div>
+                  </span>
+                </div>
+              </div>
+              <div class="skill my-5">
+                <div class="title">CSS</div>
+                <div class="progressBar" data-percentage="85">
+                  <span class="progress">
+                    <div class="percentage"></div>
+                  </span>
+                </div>
+              </div>
+              <div class="skill my-5">
+                <div class="title">Javascript</div>
+                <div class="progressBar" data-percentage="70">
+                  <span class="progress">
+                    <div class="percentage"></div>
+                  </span>
+                </div>
+              </div>
+
+              <div class="skill my-5">
+                <div class="title">Jquery</div>
+                <div class="progressBar" data-percentage="80">
+                  <span class="progress">
+                    <div class="percentage"></div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" data-section-name="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="ff-russo text-center my-5 text-muted">
+                Intrested In Hiring Me For Your Project ?
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center text-center text-muted mb-5">
+                Get In Touch
+              </h1>
+            </div>
+            <div class="col-md-12">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea
+                      name="message"
+                      cols="30"
+                      rows="10"
+                      class="form-control"
+                      palceholder="Enter Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="text-center">
+                      <button
+                        class="bgGradient btn btn-lg text-white px-5 py-2 mt-4 border-0 rounded-pill"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"
+      integrity="sha256-RGlAwHKG24hsj1109SGQgvR+Orx7u8c6zyYH4Tk3ydU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

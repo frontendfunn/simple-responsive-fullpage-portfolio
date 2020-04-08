@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ff-russo, .skill .title, .skill .progressBar .progress .percentage {
+  font-family: 'Russo One', sans-serif;
+}
+
+.bgGradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#df3284), to(#784ff4));
+  background-image: linear-gradient(#df3284, #784ff4);
+}
+
+@media (min-width: 992px) {
+  .sidebarNavigation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    margin: auto;
+    min-width: 15.625rem;
+  }
+  .mainWrapper {
+    margin-left: 15.625rem;
+  }
+}
+
+.form-control {
+  border-color: #784ff4;
+  color: #784ff4;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #784ff4;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #784ff4;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #784ff4;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #784ff4;
+}
+
+.form-control::placeholder {
+  color: #784ff4;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgContainer {
+  max-width: 300px;
+}
+
+.skill .progressBar {
+  height: 0.25rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  overflow: visible;
+}
+
+.skill .progressBar .progress {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right top, from(#df3284), to(#784ff4));
+  background-image: linear-gradient(90deg, #df3284, #784ff4);
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  overflow: visible;
+}
+
+.skill .progressBar .progress .percentage {
+  position: absolute;
+  bottom: 100%;
+  padding: 2px 4px;
+  color: #784ff4;
+  right: 0;
+  margin: auto;
+  width: 1.875rem;
+  height: 1.25rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
